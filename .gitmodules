@@ -1,0 +1,6 @@
+[submodule "app-engine-boilerplate"]
+	path = app-engine-boilerplate
+	url = git@github.com:Agigen/App-Engine-Boilerplate.git
+[submodule "agigen-frontend-boilerplate"]
+	path = agigen-frontend-boilerplate
+	url = git@github.com:Agigen/Agigen-Frontend-Boilerplate.git
