@@ -10,6 +10,21 @@ mv app-engine-boilerplate/* app-engine-boilerplate/.[^.]* ./
 mkdir frontend
 mv agigen-frontend-boilerplate/* agigen-frontend-boilerplate/.[^.]* frontend/
 
+# Remove both submodule directories
 rm -rf app-engine-boilerplate agigen-frontend-boilerplate
 
+# Link package.json to make sure all npm modules are synced
+# when running grunt in the project's root folder
+ln -s frontend/package.json package.json
+
+# Install npm modules in the current directory
+npm install
+
+# Change directory to frontend and install npm modules and bower components
+cd frontend
+npm install
+bower install
+cd ..
+
+# Bye bye init.sh
 rm init.sh
