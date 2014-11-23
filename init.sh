@@ -13,8 +13,17 @@ mv agigen-frontend-boilerplate/* agigen-frontend-boilerplate/.[^.]* frontend/
 # Remove both submodule directories
 rm -rf app-engine-boilerplate agigen-frontend-boilerplate
 
+# Move bower.json
+mv frontend/bower.json bower.json
+
 # Move package.json
 mv frontend/package.json package.json
+
+# Remove old .bowerrc
+rm frontend/.bowerrc
+
+# New .bowerrc
+echo "{\"directory\": \"frontend/libs/bower_components\"}" > .bowerrc
 
 # Install npm modules in the current directory
 npm install
