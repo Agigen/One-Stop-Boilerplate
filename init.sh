@@ -13,8 +13,11 @@ mv agigen-frontend-boilerplate/* agigen-frontend-boilerplate/.[^.]* frontend/
 # Remove both submodule directories
 rm -rf app-engine-boilerplate agigen-frontend-boilerplate
 
-# Move gulpfile
+# Move gulpfile.js
 mv frontend/gulpfile.js gulpfile.js
+
+# Move .jshintrc
+mv frontend/.jshintrc .jshintrc
 
 # Move bower.json
 mv frontend/bower.json bower.json
