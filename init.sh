@@ -17,7 +17,7 @@ mv agigen-frontend-boilerplate/* ./
 cat app-engine-boilerplate/.gitignore > .gitignore
 cat agigen-frontend-boilerplate/.gitignore > .gitignore
 
-mv agigen-frontend-boilerplate/.jshintrc > .jshintrc
+mv agigen-frontend-boilerplate/.jshintrc .jshintrc
 
 # Remove both submodule directories
 rm -rf app-engine-boilerplate agigen-frontend-boilerplate
