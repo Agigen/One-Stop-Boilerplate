@@ -14,8 +14,8 @@ mv app-engine-boilerplate/* ./
 mv agigen-frontend-boilerplate/* ./
 
 # Concat ignore files
-cat app-engine-boilerplate/.gitignore > .gitignore
-cat agigen-frontend-boilerplate/.gitignore > .gitignore
+cat app-engine-boilerplate/.gitignore >> .gitignore
+cat agigen-frontend-boilerplate/.gitignore >> .gitignore
 
 mv agigen-frontend-boilerplate/.jshintrc .jshintrc
 
